@@ -19,6 +19,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.tooling.preview.Preview
 import org.koin.core.definition.indexKey
 
 data class BottomNavigationBar(
@@ -45,7 +46,7 @@ val BottomNavigationBarItems = listOf(
     )
 )
 
-
+@Preview
 @Composable
 fun BottomNavigationBar(){
     var selectedItemIndex by rememberSaveable{
