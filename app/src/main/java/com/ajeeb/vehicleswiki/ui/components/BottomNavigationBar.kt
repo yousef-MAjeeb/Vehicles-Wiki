@@ -22,24 +22,24 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.tooling.preview.Preview
 import org.koin.core.definition.indexKey
 
-data class BottomNavigationBar(
+data class BottomNavigationItem(
     val title: String,
     val selectedIcon: ImageVector,
     val unSelectedIcon: ImageVector,
 )
 
 val BottomNavigationBarItems = listOf(
-    BottomNavigationBar(
+    BottomNavigationItem(
         title = "Home",
         selectedIcon = Icons.Filled.Home,
         unSelectedIcon = Icons.Outlined.Home
     ),
-    BottomNavigationBar(
+    BottomNavigationItem(
         title = "Favorites",
         selectedIcon = Icons.Filled.Favorite,
         unSelectedIcon = Icons.Outlined.FavoriteBorder
     ),
-    BottomNavigationBar(
+    BottomNavigationItem(
         title = "Settings",
         selectedIcon = Icons.Filled.Settings,
         unSelectedIcon = Icons.Outlined.Settings

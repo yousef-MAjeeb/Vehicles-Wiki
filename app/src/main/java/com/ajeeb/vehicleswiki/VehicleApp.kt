@@ -14,11 +14,7 @@ import com.ajeeb.vehicleswiki.ui.home.HomeScrenName
 fun VehicleApp(modifier: Modifier = Modifier){
     Scaffold(
         modifier = Modifier.fillMaxSize(),
-        bottomBar = {
-            NavigationBar {
-                BottomNavigationBar()
-            }
-        }
+        bottomBar = { BottomNavigationBar() }
     ) { innerPadding ->
         HomeScrenName(
             modifier = Modifier.padding(innerPadding)
