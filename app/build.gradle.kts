@@ -14,7 +14,7 @@ android {
 
     defaultConfig {
         applicationId = "com.ajeeb.vehicleswiki"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -49,30 +49,27 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
-    implementation("androidx.navigation:navigation-compose:2.9.7")
+    implementation(libs.androidx.navigation.compose)
 
     //ViewModel
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.10.0")
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
 
     //Koin
-    implementation("io.insert-koin:koin-android:4.2.1")
-    implementation("io.insert-koin:koin-androidx-compose:4.2.1")
-
-    //Retrofit
-    implementation("com.squareup.retrofit2:retrofit:3.0.0")
-    implementation("com.squareup.retrofit2:converter-gson:3.0.0")
-    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidx.compose)
 
     //Room
-    val room_version = "2.8.4"
-    implementation("androidx.room:room-runtime:${room_version}")
-    implementation("androidx.room:room-ktx:${room_version}")
-    ksp("androidx.room:room-compiler:$room_version")
+    implementation(libs.bundles.room)
+    ksp(libs.androidx.room.compiler)
 
     //Coil
-    implementation("io.coil-kt.coil3:coil-compose:3.4.0")
-    implementation("io.coil-kt.coil3:coil-network-okhttp:3.4.0")
+    implementation(libs.coil.compose)
+    implementation(libs.coil.network.okhttp)
 
+//    //Retrofit
+//    implementation("com.squareup.retrofit2:retrofit:3.0.0")
+//    implementation("com.squareup.retrofit2:converter-gson:3.0.0")
+//    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

@@ -1,4 +1,4 @@
-package com.ajeeb.vehicleswiki.ui.home
+package com.ajeeb.vehicleswiki.ui.browse
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Text
