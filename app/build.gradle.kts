@@ -66,10 +66,11 @@ dependencies {
     implementation(libs.coil.compose)
     implementation(libs.coil.network.okhttp)
 
-//    //Retrofit
-//    implementation("com.squareup.retrofit2:retrofit:3.0.0")
-//    implementation("com.squareup.retrofit2:converter-gson:3.0.0")
-//    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+    //Retrofit
+    implementation(libs.retrofit.core)
+    implementation(libs.retrofit.converter.gson)
+    implementation(libs.okhttp.logging.interceptor)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
